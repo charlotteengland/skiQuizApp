@@ -1,0 +1,14 @@
+* {
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    max-width: 50px;
+    margin: auto;
+    margin-top: 50px;
+}
