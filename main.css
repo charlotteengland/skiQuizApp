@@ -1,14 +1,89 @@
+body{
+    background-image: url("https://i.imgur.com/I2oWTL4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 * {
     margin: auto;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
-li {
+header {
+    margin-bottom: 40px;
+}
+.quizStart {
+    background-color: rgba(255, 181, 197);
+}
+
+.quizStart button {
+    margin: 15px;
+}
+
+.questionAnswerTemplate ul li {
     list-style: none;
+    margin: 0 0 10px 0;
 }
 
 .logo {
     max-width: 50px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    position: relative;
+    left: 5px;
+}
+
+form label {
+    display: block;
+}
+
+.questionAnswerTemplate {
+    display: none;
+    width: 50%;
+    background-color: rgba(255, 181, 197);
+    border: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width:750px) {
+    .questionAnswerTemplate,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 80px
+    }
+
+    .questionNumberdisplay li {
+        display: inline-block;
+    } 
+
+    .logo {
+        max-width: 120px;
+    }
+    
+    h2, ul li, .quizStart, span, .questionAnswerTemplate {
+        font-size: 18px;
+    }
+
+    ul li {
+        margin: 0 0 3px 0;
+    }
+}
+
+@media screen and (max-width: 650)px) {
+    .questionAnswerTemplate,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 80px
+    }
+
+    .questionNumberdisplay li {
+        display: inline-block;
+    } 
+
+    .logo {
+        max-width: 100px;
+    }
+    
 }
